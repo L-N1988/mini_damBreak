@@ -1,0 +1,31 @@
+#!/bin/sh
+cd ${0%/*} || exit 1    # Run from this directory
+
+# Check if the script is being run from an OpenFOAM case directory
+if [ ! -d "system" ] || [ ! -d "constant" ]; then
+    echo "Error: This script should be run from an OpenFOAM case directory."
+    exit 1
+fi
+
+# Remove all time directories (numeric folders like 0.1, 1, 10, 100)
+echo "Removing time directories..."
+find . -maxdepth 1 -type d -regex './[0-9]+.[0-9]*' -exec rm -rf {} +
+find . -maxdepth 1 -type d -regex './[0-9]*' -exec rm -rf {} +
+
+# Remove post-processing results
+if [ -d "postProcessing" ]; then
+    echo "Removing postProcessing directory..."
+    rm -rf postProcessing
+fi
+
+# Remove processor directories (from parallel runs)
+echo "Removing processor directories..."
+rm -rf processor*
+
+# Remove log files and other generated files
+echo "Removing log files and other generated files..."
+rm -f *.foam log.* *.OpenFOAM
+
+echo "Clean-up complete!"
+
+#------------------------------------------------------------------------------

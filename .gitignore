@@ -2,7 +2,11 @@
 [0-9]*
 
 # Ignore directories with numeric names with a decimal point
-[0-9]*.[0-9]*
+^[0-9]+$      # Ignores integer directories like 0, 1, 100
+^[0-9]+\.[0-9]+$  # Ignores decimal directories like 0.1, 1.5, etc.
+
+# Exception: do not ignore 0.org
+!0.org
 
 # Ignore post-processing directories
 postProcessing/
