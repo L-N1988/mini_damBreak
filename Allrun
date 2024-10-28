@@ -12,4 +12,6 @@ runApplication blockMesh
 runApplication setFields
 runApplication $application
 
+touch a.foam
+
 #------------------------------------------------------------------------------
