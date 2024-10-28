@@ -52,5 +52,24 @@ maxAlphaCo      1;
 
 maxDeltaT       1;
 
+functions
+{
+     interfaceHeight1
+     {
+          type	interfaceHeight;
+          libs	("libfieldFunctionObjects.so");
+          alpha	alpha.water;
+          locations	((0.3 0 0) (0.865 0 0) (1.114 0 0) (1.3625 0 0));
+     }
+     interfaceSurge
+     {
+          type	interfaceHeight;
+          libs	("libfieldFunctionObjects.so");
+          alpha	alpha.water;
+          locations	((0.6 0 0.001));
+          direction (1 0 0);
+     }
+    #include "forces"
+}
 
 // ************************************************************************* //
