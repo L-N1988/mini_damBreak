@@ -61,14 +61,6 @@ functions
           alpha	alpha.water;
           locations	((0.3 0 0) (0.865 0 0) (1.114 0 0) (1.3625 0 0));
      }
-     interfaceSurge
-     {
-          type	interfaceHeight;
-          libs	("libfieldFunctionObjects.so");
-          alpha	alpha.water;
-          locations	((0.6 0 0));
-          direction (1 0 0);
-     }
      gaugesSurge
      {
          type    sets;
