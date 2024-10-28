@@ -18,10 +18,14 @@ rho = 1000;
 
 %% plot
 fig = figure(); hold on;
-scatter(time .* sqrt(g/H), p1 ./ (rho*g*H));
-scatter(time .* sqrt(g/H), p2 ./ (rho*g*H));
-scatter(time .* sqrt(g/H), p3 ./ (rho*g*H));
-scatter(time .* sqrt(g/H), p4 ./ (rho*g*H));
+% scatter(time .* sqrt(g/H), p1 ./ (rho*g*H));
+% scatter(time .* sqrt(g/H), p2 ./ (rho*g*H));
+% scatter(time .* sqrt(g/H), p3 ./ (rho*g*H));
+% scatter(time .* sqrt(g/H), p4 ./ (rho*g*H));
+plot(time .* sqrt(g/H), p1 ./ (rho*g*H));
+plot(time .* sqrt(g/H), p2 ./ (rho*g*H));
+plot(time .* sqrt(g/H), p3 ./ (rho*g*H));
+plot(time .* sqrt(g/H), p4 ./ (rho*g*H));
 grid on;
 set(gca, 'FontSize', 16);
 set(xlabel("$t\sqrt{g/H}$"), 'Interpreter', 'latex'); 
