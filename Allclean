@@ -24,7 +24,7 @@ rm -rf processor*
 
 # Remove log files and other generated files
 echo "Removing log files and other generated files..."
-rm -f *.foam log.* *.OpenFOAM
+rm -f *.foam log.* *.OpenFOAM *.Identifier
 
 echo "Clean-up complete!"
 

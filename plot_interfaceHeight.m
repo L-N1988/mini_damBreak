@@ -1,3 +1,4 @@
+clc; clear; close all;
 datFile = "height.dat";
 datPath = dir(datFile);
 
@@ -22,6 +23,12 @@ set(gca, 'FontSize', 16);
 set(xlabel("$t\sqrt{g/H}$"), 'Interpreter', 'latex'); 
 set(ylabel("$h/H$"), 'Interpreter', 'latex');
 set(title("$H_1$"), 'Interpreter', 'latex');
+xaxisproperties= get(gca, 'XAxis');
+xaxisproperties.TickLabelInterpreter = 'latex'; % latex for x-axis
+yaxisproperties= get(gca, 'YAxis');
+yaxisproperties.TickLabelInterpreter = 'latex';   % latex for y-axis
+xlim([0 14])
+ylim([0 1])
 
 saveas(fig1, 'H1.eps', 'epsc');
 saveas(fig1, 'H1.svg', 'svg');
@@ -34,6 +41,12 @@ set(gca, 'FontSize', 16);
 set(xlabel("$t\sqrt{g/H}$"), 'Interpreter', 'latex'); 
 set(ylabel("$h/H$"), 'Interpreter', 'latex');
 set(title("$H_2$"), 'Interpreter', 'latex');
+xaxisproperties= get(gca, 'XAxis');
+xaxisproperties.TickLabelInterpreter = 'latex'; % latex for x-axis
+yaxisproperties= get(gca, 'YAxis');
+yaxisproperties.TickLabelInterpreter = 'latex';   % latex for y-axis
+xlim([0 14])
+ylim([0 1])
 
 saveas(fig2, 'H2.eps', 'epsc');
 saveas(fig2, 'H2.svg', 'svg');
@@ -46,6 +59,12 @@ set(gca, 'FontSize', 16);
 set(xlabel("$t\sqrt{g/H}$"), 'Interpreter', 'latex'); 
 set(ylabel("$h/H$"), 'Interpreter', 'latex');
 set(title("$H_3$"), 'Interpreter', 'latex');
+xaxisproperties= get(gca, 'XAxis');
+xaxisproperties.TickLabelInterpreter = 'latex'; % latex for x-axis
+yaxisproperties= get(gca, 'YAxis');
+yaxisproperties.TickLabelInterpreter = 'latex';   % latex for y-axis
+xlim([0 14])
+ylim([0 1])
 
 saveas(fig3, 'H3.eps', 'epsc');
 saveas(fig3, 'H3.svg', 'svg');
@@ -58,6 +77,12 @@ set(gca, 'FontSize', 16);
 set(xlabel("$t\sqrt{g/H}$"), 'Interpreter', 'latex'); 
 set(ylabel("$h/H$"), 'Interpreter', 'latex');
 set(title("$H_4$"), 'Interpreter', 'latex');
+xaxisproperties= get(gca, 'XAxis');
+xaxisproperties.TickLabelInterpreter = 'latex'; % latex for x-axis
+yaxisproperties= get(gca, 'YAxis');
+yaxisproperties.TickLabelInterpreter = 'latex';   % latex for y-axis
+xlim([0 14])
+ylim([0 1])
 
 saveas(fig4, 'H4.eps', 'epsc');
 saveas(fig4, 'H4.svg', 'svg');
