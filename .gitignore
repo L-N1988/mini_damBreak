@@ -24,4 +24,4 @@ log.*
 .DS_Store
 
 **/polyMesh/*
-**/animation/*
+**/animation/*.png
