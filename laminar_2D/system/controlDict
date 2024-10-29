@@ -80,7 +80,7 @@ functions
                  type    lineCellFace;
                  axis    xyz;
                  start   (0 0.005 0);
-                 end     (1.616 0.005 0);
+                 end     (1.610 0.005 0);
              }
          );
      } 

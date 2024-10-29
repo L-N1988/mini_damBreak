@@ -22,3 +22,4 @@ log.*
 *~
 *.swp
 .DS_Store
+**/animation/*
