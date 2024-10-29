@@ -8,7 +8,9 @@
 
 ## 3D
 ### laminar model
+![](./laminar_3D/animation/output.gif)
 ### turbulence model
+![](./turbulence_3D/animation/output.gif)
 
 # Changes for OF 2016
 In `controlDict`:
